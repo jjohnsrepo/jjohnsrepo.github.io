@@ -1,1 +1,45 @@
+html{
+  height: 100%;
+}
+body{
+  height:100%;  
+  margin: 0;
+}
 
+.parent {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px;
+  grid-gap: 10px;
+}
+
+.blank {
+  background-color: gray;
+  border: solid 4px;
+  transition: 1s;
+}
+
+.blank:hover {
+  cursor: pointer;
+  scale: 1.1 1.1;
+}
+
+.used1 {
+  background-color: red;
+  transition: 0.25s;
+  pointer-events: none;
+  border: black solid 4px;
+  scale: 1.1 1.1;
+  text-align: center;
+  font-size: 50px;
+}
+
+.used2 {
+  background-color: green;
+  pointer-events: none;
+  border: black solid 4px;
+  scale: 1.1 1.1;
+  text-align: center;
+  font-size: 50px;
+  transition: 0.25s;
+}
