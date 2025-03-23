@@ -1,22 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
-    <title>Test</title>
+    <title>Document</title>
   </head>
   <body>
     <div class="parent">
-      <div id="div1" class="blank" onclick="select(this)"></div>
-      <div id="div2" class="blank" onclick="select(this)"></div>
-      <div id="div3" class="blank" onclick="select(this)"></div>
-      <div id="div4" class="blank" onclick="select(this)"></div>
-      <div id="div5" class="blank" onclick="select(this)"></div>
-      <div id="div6" class="blank" onclick="select(this)"></div>
-      <div id="div7" class="blank" onclick="select(this)"></div>
-      <div id="div8" class="blank" onclick="select(this)"></div>
-      <div id="div9" class="blank" onclick="select(this)"></div>
+      <div id="div1" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div2" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div3" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div4" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div5" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div6" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div7" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div8" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      <div id="div9" class="blank" onclick="select(this);checkWinnerx(this);checkWinnero(this);checkForCatWin()"></div>
+      
+      <div id="div10" class = scorebored>Scorebored:</div>
+      <div id="div11" class = scoreboredx>0</div>
+      <div id="div12" class = scoreboredo>0</div>
+      
+      <button id="button1" class=reset onclick="reset()">Reset board</button>
+     
+     <span id="winner">Winner: </span>
+     
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
