@@ -1,5 +1,14 @@
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+
 h1{
 	text-align: center;
+	font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 #enter{
@@ -23,25 +32,25 @@ body {
 
 #pause{
 	cursor:pointer;
-	position: absolute;
+	position: fixed;
 	top: 60px;
-	left:60px;
+	left:50px;
 	scale: 5 5;
 }
 
 #pause_text{
-	position: absolute;
-	top: 60px;
-	left:140px;
+	position: fixed;
+	top: 130px;
+	left:10px;
 	font-size: 20px;
 	animation: pulseAnimation 1s infinite;
-	width:200px;
+	width:100px;
 }
 #unpause{
 	cursor:pointer;
-	position: absolute;
+	position: fixed;
 	top: 60px;
-	left:60px;
+	left:50px;
 	scale: 4 4;
 	display:none;
 	}
@@ -95,7 +104,7 @@ body {
 #img4{
 	position:absolute;
 	left:80vw;
-	top:33vh;
+	top:46vh;
 }
 
 #img5{
@@ -107,7 +116,7 @@ body {
 #img6{
 	position:absolute;
 	left:57vw;
-	top:40vh;
+	top:45vh;
 }
 
 
@@ -140,15 +149,34 @@ body {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content: space-around;
+	margin: auto;
 	gap: 20px;
 	font-size: 30px;
 }
 
+.description_holder{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 40px;
+	text-align: center;	
+	margin-top: 80px;
+}
 #aboutMeText{
 	display:none;
 }
+
 #recordingsText{
 	display:none;
+}
+#upcomingEventsText{
+	display: none;
+}
+#lessonsText{
+	display: none;
+}
+#contactMeText{
+	display: none;
 }
  
 #about_me:hover{
@@ -181,11 +209,23 @@ cursor:grab;
 	cursor:grab;
 	}
 
-.description_text{
-	display:flex;
-	
+	.recording-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
+		padding: 20px;
+	  }
+	  
 
-}
+
+
+	  video {
+		width: 100%;
+		border: 2px solid #ccc;
+		border-radius: 8px;
+	  }
+	  
+
 
 
 

@@ -9,7 +9,7 @@ function show1(id){
 
 function start(){
     document.getElementById('welcome').textContent="Justin Piano Company";
-    document.getElementById('discover').textContent="Click each one to learn more";
+    document.getElementById('discover').textContent="Click below to learn more";
     document.getElementById('h3').style.display='none';
     document.getElementById('img1').style.display='none';
     document.getElementById('img2').style.display='none';
@@ -18,11 +18,30 @@ function start(){
     document.getElementById('img5').style.display='none';
     document.getElementById('img6').style.display='none';
     document.getElementById('button1').style.display='none';
+    document.getElementById('page2').style.display='flex';
 }
 
-function showSection(divID){
-    document.getElementById(divID).style.display='block';
+function showSection(divID) {
+   
+    document.getElementById(divID).style.display = 'block';
+    
+    if (divID != 'aboutMeText') {
+        document.getElementById('aboutMeText').style.display = 'none';
+    }
+    if (divID != 'recordingsText') {
+        document.getElementById('recordingsText').style.display = 'none';
+    }
+    if (divID != 'upcomingEventsText') {
+        document.getElementById('upcomingEventsText').style.display = 'none';
+    }
+    if (divID != 'lessonsText') {
+        document.getElementById('lessonsText').style.display = 'none';
+    }
+    if (divID != 'contactMeText') {
+        document.getElementById('contactMeText').style.display = 'none';
+    }
 }
+
 
 
 function pause() {

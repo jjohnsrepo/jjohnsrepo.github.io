@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Piano Co</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
 
 </head>
 <body>
-    <h1 id="welcome">Welcome</h1>
-    <div id="enter">
-        <h2 id="discover">Discover below</h2>
-        <h3 id="h3">Find the six hidden images</h3>
-		<span id="piano" class="material-symbols-outlined">
-			piano
-			</span>
-			<span id='pause' onclick="pause()" class="material-symbols-outlined">
-			pause_circle
-			</span>
-			<div id="pause_text">Click here to pause and unpause background</div>
-    </div>
-	<span id="unpause" class="material-symbols-outlined" onclick="unpause()">
-		play_arrow
-		</span>
+	<div class="container">
 
+	<!-- header -->
+	<section id="header">
+		<div id="enter">
+			<h1 id="welcome">Welcome</h1>
+			<h2 id="discover">Discover below</h2>
+			<h3 id="h3">Find the six hidden images to enter site</h3>
+			<span id="piano" class="material-symbols-outlined">piano</span>
+			<span id='pause' onclick="pause()" class="material-symbols-outlined">pause_circle</span>
+			<div id="pause_text">Click here to pause and unpause background</div>
+			<span id="unpause" class="material-symbols-outlined" onclick="unpause()">play_arrow</span>
+		</div>
+	</section>	
 	<hr style="color:white">
+
+    <button id="button1" onclick="start()">Click here to continue!</button>
+
+	<!-- hidden images -->
     <div id="main" class="main">
         <img id='img1' src="media/1.jpeg" height=200px class="pic" onclick="show1('img1')">
         <img id='img2' src="media/2.jpeg" height=200px class="pic" onclick="show1('img2')">
@@ -36,23 +37,59 @@
         <img id='img6' src="media/6.jpeg" height=200px class="pic" onclick="show1('img6')">
     </div>
 	
-    <button id="button1" onclick="start()">Click here to continue!</button>
+
+
 
 	<div id="page2" class="page2">
-		<div id="about_me" onclick="showSection('aboutMeText')">
-			About Me
+		<div id="about_me" onclick="showSection('aboutMeText')">About Me</div>
+		<div id="recordings" onclick="showSection('recordingsText')">Recordings</div>
+		<div id="upcoming_events" onclick="showSection('upcomingEventsText')">Upcoming Events</div>
+		<div id="lessons" onclick="showSection('lessonsText')">Lessons</div>
+		<div id="contact_me" onclick="showSection('contactMeText')">Contact Me</div>
+	</div>
+		<!-- Body text -->
+	<div class="description_holder">
+		<div id="aboutMeText">	
+			<img id='img7' src="media/7.jpeg" height=400px>
+			<p>This is all of the text inside about me. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+			Architecto laborum doloribus magnam delectus vero, excepturi eius iusto fugit repellendus dolorum quidem voluptatibus perferendis, 
+			accusantium possimus earum dolor veritatis perspiciatis aspernatur?</p>
+		</div>
+		<div id="recordingsText">
+			<h2>Recordings</h2>
+				<div class="recording-grid">
+					<div class="vidTitle">
+						<video src="media/video1.mp4" controls></video>
+						<h1>I will walk with Jesus</h1>
+					</div>
+					<div class="vidTitle">
+						<video src="media/video2.mp4" controls></video>
+						<h1>I will walk with Jesus</h1>
+					</div>
+					<div class="vidTitle">
+						<video src="media/video3.mp4" controls></video>
+						<h1>I will walk with Jesus</h1>
+					</div>
+				</div>
 				
 		</div>
-		<div id="recordings" onclick="showSection('recordingsText')">
-			Recordings
+		<div id="upcomingEventsText">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			 Ad dignissimos odit fugiat deserunt, quos vel aspernatur veritatis soluta odio provident ducimus, itaque mollitia corporis, neque optio.
+			  Quae earum vitae itaque!</p>
 		</div>
-		<div id="upcoming_events">Upcoming Events</div>
-		<div id="lessons">Lessons</div>
-		<div id="contact_me">Contact Me</div>
+		<div id="lessonsText">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			Ad dignissimos odit fugiat deserunt, quos vel aspeur veritatis soluta odio provident ducimus, itaque mollitia corporis, neque optio.
+			 Quae earum vitae itaque!</p>
+		</div>
+		<div id="contactMeText">
+			<p>Lorem ipsum dolor sit amet g elit.
+			Ad dignissimos odit fugiat deserunt, quos vel aspernatur veritatis soluta odio provident ducimus, itaque mollitia corporis, neque optio.
+			 Quae earum vitae itaque!</p>
+		</div>
 	</div>
-	<div class="description_text">
-	<div id="aboutMeText">This is all of the text inside about me</div>
-	<div id="recordingsText">This is all of the text inside recordings</div>
 	</div>
 </body>
+<script src="script.js"></script>
 </html>
