@@ -1,10 +1,16 @@
+#header{
+	display:block;
+}
+
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 20px;
   }
   
-
+img{
+	filter:grayscale(100%)
+}
 h1{
 	text-align: center;
 	font-size: 2.5rem;
@@ -21,6 +27,7 @@ body {
   background-attachment: fixed;
   background-size: cover; 
   color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #piano{
@@ -42,7 +49,7 @@ body {
 	position: fixed;
 	top: 130px;
 	left:10px;
-	font-size: 20px;
+	font-size: 15px;
 	animation: pulseAnimation 1s infinite;
 	width:100px;
 }
@@ -65,85 +72,6 @@ body {
 }
 
 
-.main{
-	display:flex;
-	flex-wrap:wrap;
-}
-
-.pic {
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.pic:hover {
-    opacity: 1;
-}
-
-.show {
-    opacity: 1;
-	pointer-events: none;
-}
-
-
-#img1{
-	position:absolute;
-	bottom:15px;
-}
-#img2{
-	position:absolute;
-	left:15vw;
-	top:40vh;
-}
-
-#img3{
-	position:absolute;
-	left:35vw;
-	top:60vh;
-}
-
-#img4{
-	position:absolute;
-	left:80vw;
-	top:46vh;
-}
-
-#img5{
-	position:absolute;
-	left:71vw;
-	top:90vh;
-}
-
-#img6{
-	position:absolute;
-	left:57vw;
-	top:45vh;
-}
-
-
-#button1{
-	position:absolute;
-	top:110vh;
-	left:10vw;
-	background:black;
-	color:white;
-	border:none;
-	width:600px;
-	height:30px;
-	opacity:0;
-}
-
-#button1:hover{
-	position:absolute;
-	top:110vh;
-	left:10vw;
-	background:black;
-	color:white;
-	border:none;
-	width:600px;
-	height:30px;
-	scale:1.1;
-	transition:.5s;
-}
 
 .page2{
 	display:flex;
@@ -160,7 +88,7 @@ body {
 	justify-content: center;
 	font-size: 40px;
 	text-align: center;	
-	margin-top: 80px;
+	margin-top: 40px;
 }
 #aboutMeText{
 	display:none;
@@ -175,8 +103,19 @@ body {
 #lessonsText{
 	display: none;
 }
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  padding: 0;
+}
 #contactMeText{
 	display: none;
+}
+a:link {
+  color: gray;
+  background-color: transparent;
+
 }
  
 #about_me:hover{
@@ -212,17 +151,17 @@ cursor:grab;
 	.recording-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 20px;
-		padding: 20px;
+		gap: 40px;
+		padding:0px;
+		
 	  }
-	  
-
-
-
+	
 	  video {
 		width: 100%;
+		height:190px;
 		border: 2px solid #ccc;
 		border-radius: 8px;
+		
 	  }
 	  
 
@@ -234,4 +173,26 @@ cursor:grab;
 	#pause_text {
 		display: none;
 	}
+
+	#piano{
+		position: absolute;
+		top: 60px;
+		right: 50px;
+		scale:3 3;
+	}
+	#pause{
+		cursor:pointer;
+		position: fixed;
+		top: 60px;
+		left:50px;
+		scale: 3 3;
+	}
+	#unpause{
+		cursor:pointer;
+		position: fixed;
+		top: 60px;
+		left:50px;
+		scale: 3 3;
+		display:none;
+		}
 	}
